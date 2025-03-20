@@ -6,6 +6,30 @@
                 <hr class="primary">
                 <p>필립과 함께 마케팅을 바로세울 준비가 되셨나요? 언제든지 궁굼하신 부분이 있다면 문의를 남겨주세요</p>
             </div>
+            <section id="inquiry-form" class="inquiry-section">
+                <div class="container">
+                    <h2 class="section-heading">문의하기</h2>
+                    <form id="contact-form" action="send_email.php" method="POST">
+                        <div class="form-group">
+                            <label for="company">업체명</label>
+                            <input type="text" id="company" name="company" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">담당자명</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">연락처</label>
+                            <input type="tel" id="phone" name="phone" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">문의사항</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-xl">문의 제출</button>
+                    </form>
+                </div>
+            </section>
         <div class="col-lg-2 col-lg-offset-2 text-center">
             <a href="https://twitter.com/{{ site.twitter_username }}">
                 <i class="fa fa-twitter fa-3x wow bounceIn" data-wow-delay=".1s"></i>
