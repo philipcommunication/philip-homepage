@@ -2304,3 +2304,13 @@ if (typeof jQuery === 'undefined') {
   })
 
 }(jQuery);
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+      let navbar = document.querySelector("header"); // 네비게이션 바 선택
+      if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+      } else {
+          navbar.classList.remove("scrolled");
+      }
+  });
+});

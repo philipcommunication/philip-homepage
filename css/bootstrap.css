@@ -6563,3 +6563,28 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+.navbar-logo {
+  height: 40px; /* 로고 크기 조절 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+.navbar-text {
+  font-size: 20px;
+  font-weight: bold;
+  color: #272645; /* 스크롤 후 텍스트 색상 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* 기본적으로 텍스트는 숨기고, 로고만 보이게 설정 */
+.hidden-logo {
+  opacity: 0;
+}
+
+/* 스크롤 시 로고 숨기고 텍스트 보이기 */
+.scrolled .navbar-logo {
+  opacity: 0;
+}
+
+.scrolled .navbar-text {
+  opacity: 1;
+}
