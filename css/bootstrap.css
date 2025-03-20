@@ -6563,35 +6563,28 @@ button.close {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
-/* 네비게이션 바 로고 이미지 스타일 */
 .navbar-logo {
-  width: 50px; /* 이미지의 너비 설정 (원하는 크기로 변경) */
-  height: auto; /* 비율 유지 */
-  margin-top: 5px; /* 상단 여백 */
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
+    height: 40px; /* 로고 크기 조절 */
+    transition: opacity 0.3s ease-in-out;
 }
 
 .navbar-text {
-  font-size: 20px;
-  font-weight: bold;
-  color: #272645; /* 스크롤 후 텍스트 색상 */
-  transition: opacity 0.3s ease-in-out;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272645; /* 스크롤 후 텍스트 색상 */
+    transition: opacity 0.3s ease-in-out;
 }
 
 /* 기본적으로 텍스트는 숨기고, 로고만 보이게 설정 */
 .hidden-logo {
-  opacity: 0;
+    opacity: 0;
 }
 
 /* 스크롤 시 로고 숨기고 텍스트 보이기 */
 .scrolled .navbar-logo {
-  opacity: 0;
+    opacity: 0;
 }
 
 .scrolled .navbar-text {
-  opacity: 1;
+    opacity: 1;
 }
