@@ -25,6 +25,11 @@ main,
 menu,
 nav,
 section,
+.main-title {
+  display: block;
+  white-space: nowrap; /* 자동 줄바꿈 방지 */
+  text-align: center; /* 가운데 정렬 */
+}
 summary {
   display: block;
 }
