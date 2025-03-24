@@ -384,6 +384,16 @@ form label {
     font-size: 16px;
 }
 
+/* 문의하기 버튼을 가운데 정렬 */
+#contact-form {
+    text-align: center; /* 폼 내부 요소를 가운데 정렬 */
+}
+
+#contact-form button {
+    display: block; 
+    margin: 20px auto 0; /* 상단 20px, 좌우 auto로 가운데 정렬 */
+}
+
 /* 전화문의 버튼 */
 .floating-call {
     position: fixed;
