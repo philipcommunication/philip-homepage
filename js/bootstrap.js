@@ -2314,14 +2314,17 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
-$(document).ready(function() {
-  $(window).scroll(function() {
-      if ($(this).scrollTop() > 50) { // 스크롤이 50px 이상 내려가면
-          $("#nav-logo").css("opacity", "0"); // 이미지 숨기기
-          $("#nav-text").removeClass("hidden"); // 텍스트 표시
+
+
+// 네비게이션 바 스크롤 이벤트
+document.addEventListener("DOMContentLoaded", function () {
+  window.addEventListener("scroll", function () {
+      var navbar = document.getElementById("mainNav");
+
+      if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
       } else {
-          $("#nav-logo").css("opacity", "1"); // 이미지 다시 보이기
-          $("#nav-text").addClass("hidden"); // 텍스트 숨기기
+          navbar.classList.remove("scrolled");
       }
   });
 });
