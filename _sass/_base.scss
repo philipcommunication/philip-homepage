@@ -349,6 +349,19 @@ body {
     -webkit-tap-highlight-color: $theme-dark;
 }
 
+.logo {
+    height: 40px; /* 로고 크기 조정 */
+    transition: opacity 0.3s ease-in-out;
+}
+
+.hidden {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #272645; /* 원하는 색상으로 설정 */
+    transition: opacity 0.3s ease-in-out;
+}
+
 .navbar-logo {
     height: 40px; /* 로고 크기 조정 */
     transition: opacity 0.3s ease-in-out;
