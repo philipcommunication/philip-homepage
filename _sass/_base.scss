@@ -383,3 +383,24 @@ form label {
     border-radius: 5px;
     font-size: 16px;
 }
+
+/* 전화문의 버튼 */
+.floating-call {
+    position: fixed;
+    right: 20px; /* 화면 오른쪽에서 20px */
+    bottom: 20px; /* 화면 아래에서 20px */
+    z-index: 1000; /* 다른 요소 위에 배치 */
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* 버튼 크기 설정 */
+.floating-call img {
+    width: 80px; /* 원하는 크기로 조절 가능 */
+    height: auto;
+}
+
+/* 스크롤 시 살짝 커지는 효과 */
+.floating-call:hover {
+    transform: scale(1.1);
+}

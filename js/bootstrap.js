@@ -2325,3 +2325,17 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+//전화걸기 버튼js
+document.addEventListener("DOMContentLoaded", function () {
+  var callButtonImage = document.getElementById("callButtonImage");
+
+  // 새로운 이미지로 변경하는 함수
+  function changeCallButtonImage(newSrc) {
+      callButtonImage.src = newSrc;
+  }
+
+  // 예시: 3초 후 이미지 변경
+  setTimeout(function () {
+      changeCallButtonImage("img/call-button-new.png");
+  }, 3000);
+});
