@@ -2314,17 +2314,14 @@ document.addEventListener("DOMContentLoaded", function () {
       }
   });
 });
-
-
-// 네비게이션 바 스크롤 이벤트
 document.addEventListener("DOMContentLoaded", function () {
-  window.addEventListener("scroll", function () {
-      var navbar = document.getElementById("mainNav");
+    window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("mainNav");
 
-      if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-      } else {
-          navbar.classList.remove("scrolled");
-      }
-  });
+        if (window.scrollY > 50) {
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
 });
